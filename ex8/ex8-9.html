@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+         p:nth-of-type(odd){
+         color: red;
+    }
+             p:not(:nth-of-type(odd)){
+/*         color: red;*/
+    }
+/*        odd 홀수 / even 짝수*/
+/*
+        타입이 아닌 전부를 셈
+        p:nth-child(2n){
+            color: blue;
+        }
+*/
+        
+    </style>
+  
+</head>
+<body>
+    <div>여기는 카운트 세는 곳이 아님</div>
+    <p>1번째 p태그</p>
+    <p>2번째 p태그</p>
+    <div>여기는 카운트 세는 곳이 아님</div>
+    <p>3번째 p태그</p>
+    <p>4번째 p태그</p>
+    
+</body>
+</html>

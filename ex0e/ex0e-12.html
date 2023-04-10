@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 풀이</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 1100px;
+            height: 500px;
+            border: 2px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 20px;
+        }
+        .card{
+            border-radius: 25px;
+            margin: auto;
+            width: 240px;
+            height: 200px;
+            background-color: white;
+        }
+        .img1{
+            height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://i.ytimg.com/vi/UK3UNstyrxc/maxresdefault.jpg")   
+        }
+        .img2{
+               height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://kmug.co.kr/data/file/design/thumb-data_logo_%EB%AC%B4%ED%95%9C%EB%8F%84%EC%A0%84_760x460.jpg")
+        }
+        .img3{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://i.ytimg.com/vi/xL7d0WWjNLY/maxresdefault.jpg")
+            
+        }
+         .img4{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://dispatch.cdnser.be/wp-content/uploads/2015/08/20150831170811_f1d93918088f8bb63e2ae1de03688667.jpg")
+            
+        }
+         .img5{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://t1.daumcdn.net/cfile/tistory/120F274E4EDA94B725")
+            
+        }
+         .img6{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://i.ytimg.com/vi/Vpot7qy6xDs/maxresdefault.jpg")
+            
+        }
+         .img7{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://images.khan.co.kr/article/2013/04/25/l_2013042602001018600309781.jpg")
+            
+        }
+         .img8{
+              height: 70%;
+            background-color: ghostwhite;
+            background-size:cover;
+            border-radius: 10px 10px 10px;
+            background-image: url("https://cdn.allets.com/550/2018/12/26/550_398981_1545818685.webp")
+            
+        }
+        
+        
+        img{
+            width: 100;
+            height: 65%;
+            border-radius: 20px 20px 20px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img1">1</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">사진 달인 박명수</div>
+        </div>
+        <div class="card">
+            <div class="img2">2</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">SBS무한도전</div>
+        </div>
+        <div class="card">
+            <div class="img3">3</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">박명수 이태원 브이로그</div>
+        </div>
+        <div class="card">
+            <div class="img4">4</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">박명수 여장하다</div>
+        </div>
+        <div class="card">
+            <div class="img5">5</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">명수야 놀자~~~</div>
+        </div>
+        <div class="card">
+            <div class="img6">6</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">꽃보다남자 구명수</div>
+        </div>
+        <div class="card">
+            <div class="img7">7</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">노년명수</div>
+        </div>
+        <div class="card">
+            <div class="img8">8</div>
+            <div><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2017/07/05/42bfc9e1-f7ca-4a1c-8ab4-c435d3e1dbd8.jpg" alt="" width="40">명언명수</div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 풀이</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 5px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 20px;
+        }
+        .card{
+            border-radius: 25px;
+            margin: auto;
+            width: 220px;
+            height: 200px;
+            border: 5px solid #000;
+            background-color: blanchedalmond;
+        }
+        .imgs{
+            height: 70%;
+            background-color: chocolate;
+            background-image: url("http://cdn.ggilbo.com/news/photo/201704/367041_280142_5828.jpg");
+            background-size:cover;
+            border-radius: 20px 20px 0 0
+                
+        }
+        img{
+            width: 100;
+            height: 65%;
+            border-radius: 20px 20px 0 0
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgs">1</div>
+            <div>박명수</div>
+        </div>
+        <div class="card">
+            <div class="imgs">2</div>
+            <div>무한도전</div>
+        </div>
+        <div class="card">
+            <div class="imgs">3</div>
+            <div>지금도 집가고 싶다</div>
+        </div>
+        <div class="card">
+            <div class="imgs">4</div>
+            <div>'yes'</div>
+        </div>
+    </div>
+    
+</body>
+</html>

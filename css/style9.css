@@ -1,0 +1,22 @@
+@media(max-width:1280px) {
+body{ color: blue;
+  background:url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMjNfMjEg%2FMDAxNjc3MTYzOTE1NzAw.UryQI-CiVjR2dzmL3LuANPPBYgU0G8bntXnIZG7HTzgg.jeufJTSDWhlYlWeGY75L4FsWLPmq0pkIkqgDKsg--UAg.JPEG.a7824a%2Foutput_1830319017.jpg&type=a340)no-repeat;
+}
+@media(max-width:800px ) {
+body { color: white;
+  background:url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMTdfMjMy%2FMDAxNjcxMjg3NDU2MDQ5.3GQ-K2UJA6IwYg0_YsVIB4kpKARitfIMT9HV0XWVKokg.ts7fQd_wz_E6baRIXR1hEiZiDT9AFAsVGAXB2hgLIP4g.JPEG.kahee0905%2FIMG_7252.jpg&type=a340) no-repeat;} }
+
+
+
+
+
+
+
+h1{
+border-bottom: 1px solid red;
+  padding: 10px;
+  
+}
+span{ padding: 5px;
+    }
+

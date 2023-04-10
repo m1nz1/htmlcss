@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    <style>
+            :root{
+            --mypink1:#dbb5ed;
+            --mypink2:#ddbaf2;
+            --mypink3:#f1defc;
+            --mypink4:#c88df6;
+            --myred1:#ec4545;
+            --myred2:#f28b8b;
+            --myred3:#f9b2b2;
+            --myred4:#dd2121;
+            --myblue1:#0f77bc;
+            --myblue2:#63b5ec;
+            --myblue3:#b0d6f1;
+            --myblue4:#add1fa;
+        }
+    
+        div{
+            
+        }
+    .wrap{
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 50px 50px 400px 50px;   
+        }
+       .grid1{
+            background: var(--mypink4);
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .grid2{
+            background: var(--mypink3);
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .grid3{
+            background: var(--myred2);
+            grid-column-start: 1;
+            grid-column-end: 5;
+/*
+            grid-row-start: 2;
+            grid-row-end: 5;
+*/
+        }
+        .grid4{
+            background: var(--myred3);
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .grid5{
+            background: var(--myblue2);
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        }
+        .grid6{
+            background: var(--myblue4);
+             grid-column-start: 1;
+            grid-column-end: 5;
+            
+        }
+      
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+    
+        
+        <div class="grid5">6</div>
+    </div>
+</body>
+</html>

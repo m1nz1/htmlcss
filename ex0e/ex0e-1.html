@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0px;
+   
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: column;
+            height: 100%
+        }
+
+        .header {
+            height: 65px;
+            background-color: plum;
+        }
+
+        .nav {
+            margin: 10px;
+            border-radius: 15px;
+            height: 40px;
+            background-color: lightpink;
+        }
+
+        .main {
+            display: flex;
+/*
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+*/
+            flex: 1;
+        }
+
+        .content {
+            background-color: darkorange;
+            flex: 4;
+            
+        }
+
+        .aside {
+            background-color: palegreen;
+            width: 80px;
+/*            flex: 1;*/
+        }
+
+        .footer {
+            height: 65px;
+            background-color: skyblue;
+        }
+        h1{
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+         table{border-collapse: collapse}
+        
+        
+       th,td{border: 1px solid black
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><h1>귀여운 동물</h1></div>
+        <div class="nav">집에서 키우는 동물들</div>
+        <div class="main">
+            <div class="content"><div>
+            </div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis quibusdam laboriosam necessitatibus recusandae magnam quo iusto dolorem impedit exercitationem, iure reprehenderit hic quam repudiandae sunt et illo? Sit, voluptas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis quibusdam laboriosam necessitatibus recusandae magnam quo iusto dolorem impedit exercitationem, iure reprehenderit hic quam repudiandae sunt et illo? Sit, voluptas! <br> <br>
+            
+              
+              <div>
+                 <img src="https://modo-phinf.pstatic.net/20211229_82/1640756669795R33rY_PNG/mosa3rmKoO.png?type=f320_320" alt="" width="150">
+                <img src="https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?w=2000" alt="고양이" width="200">
+                <img src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg" alt="" width="150">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwybHjsDhe1qN7-PLA8rEQuXldz_Qyli1t2g&usqp=CAU" alt="" width="150">
+                  
+              </div>           
+               
+               <table>
+                <tr>
+                    <td>고양이</td>
+                    <td>강아지</td>
+                    <td>미어켓</td>
+                    <td>고슴도치</td>
+                </tr>
+                <tr>
+                    <td>집</td>
+                    <td>집</td>
+                    <td>집</td>
+                    <td>집</td>
+                </tr>
+                <tr>
+                    <td>여자</td>
+                    <td>여자</td>
+                    <td>남자</td>
+                    <td>남자</td>
+                </tr>
+                <br><br>
+        
+                
+                   
+                
+            </table></div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+
+</html>
