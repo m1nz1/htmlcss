@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <mata http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial=scale=1.0" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+
+    <title>find movie</title>
+
+
+    <style>
+        .display-flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .find-search-bar-form {
+            /*            /검색바 간격 조정*/
+            padding: 0 25px;
+        }
+
+        .find-search-bar-form div {
+            /*            검색바 길이 조정*/
+            width: 100%;
+        }
+
+        .find-search-bar {
+            /*            검색바 윗 간격 조절*/
+            margin-top: 50px;
+            background-color: var(--darkurple);
+            border-radius: 25px;
+            /*            검색바 길이 조정*/
+            width: 100%;
+            padding: 10px;
+            /*            입력시 글씨 하얗게*/
+            color: white;
+            transition: background-color 0.3s ease-in-out;
+
+        }
+
+        .find-search-bar:focus {
+            background-color: #594374;
+        }
+
+        .find-search-bar-form span {
+            /*            relative를 기준으로 위치 조정*/
+            position: absolute;
+            font: 1rem;
+            bottom: 0.55rem;
+            /*            오른쪽으로 부터 25px 떨어짐*/
+            right: 25px;
+        }
+
+        .best-movie__img-container {
+            padding: 0 20px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .best-movie__img {
+            width: 22rem;
+            height: 12rem;
+            border-radius: 25px;
+        }
+
+        .best-movie__img-container spen {
+            /*    position:relative의 값을 가진 곳을 기분으로 움직임*/
+            position: absolute;
+            background-color: var(--purple);
+            border-radius: 50%;
+            left: calc(50%+5rem);
+            font-size: 5rem;
+            bottom: 3.2rem;
+        }
+
+        .best-movie__title {
+            padding-left: 25px;
+        }
+
+        .best-movie__promotion-title {
+            font-size: 14px;
+        }
+
+        .best-movie__movie-name {
+            color: var(--purple);
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        div {
+            width: calc(50%+5rem);
+        }
+    </style>
+</head>
+
+<body>
+
+    <span class="material-symbols-outlined">
+        search
+    </span>
+
+    <form class="find-search-bar-form display-flex-center position-relative">
+        <div class="display-flex-center position-relative">
+            <input class="find-search-bar" placeholder="검색하기">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <!--
+            <span class="Material+Symbols+Outlined">
+                search
+            </span>
+-->
+        </div>
+    </form>
+
+
+    <div class="best-movie">
+        <div class="best-movie__img-container">
+            <img class="best-movie__img" src="https://i.namu.wiki/i/SA62mgd4EjeXHUXB1Qs0vjZC9F19nBbKtf0Qo7tMa7veCSMOamGJALSW_OIv7BXcK-xBhDSOOfFjWBI-qHZljknmprw1_6WmAcpLLWG264P869j42Jam14xXesXHq4lraeBGCz1eBXnM0dD37iCgbw.webp">
+            <span class="material-symbols-outlined">
+                play_arrow
+            </span>
+<!--                        <span class="material-icons">play_arrow</span>-->
+        </div>
+
+        <div class="best-movie__title">
+            <p class="best-movie__promotion-text">지금 가장 흥행하는 작품은?</p>
+            <span class="best-movie__movie-name">슬기로운 의사생활</span>
+
+        </div>
+    </div>
+
+</body></html>

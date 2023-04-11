@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MinFlix</title>
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dokdo&family=Dongle:wght@300&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+   
+    
+    <style>
+        
+        
+        .login-form input:not([type="sumit"]) {
+            
+        }
+  
+        body {
+             font-family:"Dongle",sans-serif;
+             font-size: 20px;
+             background-color: black;
+             color: aliceblue;
+             
+        }
+        
+        
+        *{
+            box-sizing: border-box;
+        }
+       
+        .login-title{
+            text-align: center;
+            
+        } 
+        .login-title__maintext{
+            font-size: 2.5rem;
+            color: var(--purple);
+        }
+        login-title__subtext{   
+        }
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+        html, body{
+            overflow: hidden;
+            
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem;
+        }
+        .login-form input{
+            padding: 15px 0;
+            margin: 0 10px;
+            border: none;
+            outline: none;
+            appearance:none;
+            background-color: var(--background-purple);
+            font-size: 1em;
+        }
+        
+        .login-form input:not([type="submit"]){
+            color: white;
+            border-bottom: 1px soild var(--border);
+            transition: border-color 0.3s ease-in-out;
+            
+        }
+        .login-form input:focus{
+            border-color: white;
+        }
+        .login-form input[type="submit"]{
+            color: white;
+            background-color: var(--darkpurple);
+            border-radius: 20px;
+            margin-top: 2rem;
+            transition: backgriund-color 0.2s ease-in-out;
+            
+        }
+        .login-form input[type="submit"]:active{
+            background-color: var(--purple);
+        }
+        :root{
+            --purple: #6644b8;
+            --darkpurple:#37274b;
+            --background-purple:#120522;
+            --border: rgba(255, 255, 255, 0.5); }
+    </style>
+</head>
+<body>
+  
+  <img src="https://img.marieclairekorea.com/2021/08/mck_612ee9484dd88.jpg" class="login-img">
+  
+  <div class="login-title">
+      <h1 class="login-title__maintext">Minflix</h1>
+      <p class="login-title__subtext"> 새로운 OTT 민플릭스 등장! <br>
+         지금 가입하면 무료!
+          
+      </p>
+  </div>
+      
+     
+
+    <form  action="find.html" class="login-form">
+        
+        <input name="username"
+        type="text"
+        required
+        autocomplete="off"
+        placeholder="ID"/>
+        
+        <input name="password"
+        type="password"
+        required
+        autocomplete="off"
+        placeholder="PASSWORD"/>
+        
+        <input type="submit" value="게스트로 접속하기" />
+        
+        
+    </form>
+    
+</body>
+</html>
