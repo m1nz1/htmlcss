@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <mata http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial=scale=1.0" />
+    <!--    <meta name="viewport" content="width=device-width, initial=scale=1.0" />-->
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>find movie</title>
 
 
     <style>
+        body{
+            background-color: black;
+        }
         .display-flex-center {
             display: flex;
             justify-content: center;
@@ -36,7 +42,7 @@
         .find-search-bar {
             /*            검색바 윗 간격 조절*/
             margin-top: 50px;
-            background-color: var(--darkurple);
+            background-color: #3a113a;
             border-radius: 25px;
             /*            검색바 길이 조정*/
             width: 100%;
@@ -48,7 +54,7 @@
         }
 
         .find-search-bar:focus {
-            background-color: #594374;
+            background-color: #b68ab6;
         }
 
         .find-search-bar-form span {
@@ -69,19 +75,19 @@
         }
 
         .best-movie__img {
-            width: 22rem;
-            height: 12rem;
+            width: 25rem;
+            height: 15rem;
             border-radius: 25px;
         }
 
-        .best-movie__img-container spen {
+        .best-movie__img-container span {
             /*    position:relative의 값을 가진 곳을 기분으로 움직임*/
             position: absolute;
-            background-color: var(--purple);
+            background-color: #9520cf;
             border-radius: 50%;
-            left: calc(50%+5rem);
-            font-size: 5rem;
-            bottom: 3.2rem;
+            left: calc(55% + 6rem);
+            font-size: 4rem;
+            bottom: 4.5rem;
         }
 
         .best-movie__title {
@@ -93,22 +99,63 @@
         }
 
         .best-movie__movie-name {
-            color: var(--purple);
-            font-size: 40px;
+            color: #9520cf;
+            font-size: 35px;
             font-weight: 600;
         }
 
-        div {
-            width: calc(50%+5rem);
+        .movie-recommendation {
+            margin: 25px 0;
+            padding: 0 25px;
+        }
+
+        .movie-recommendation__imges {
+            margin-top: 15px;
+            /*            /ul 스타일 제거*/
+            list-style: none;
+            display: flex;
+            /*            x축 방향으로 스크롤*/
+            overflow-x: scroll;
+        }
+
+        .movie-recommendation__imges li {
+            margin-left:
+        }
+
+        .movie-recommendation__imges img {
+            width: 150px;
+            border-radius: 15px;
+        }
+
+        .navigation-bar {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 6rem;
+            height: 2.2rem;
+            border-radius: 0 10px 0 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .navigation-bar span {
+            color: black;
+            font-size: 1.5rem;
+        }
+
+        .material-symbols-outlined {
+            color: white;
+        }
+        .find-icon-clicked{
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
 
-    <span class="material-symbols-outlined">
-        search
-    </span>
+
 
     <form class="find-search-bar-form display-flex-center position-relative">
         <div class="display-flex-center position-relative">
@@ -125,13 +172,13 @@
     </form>
 
 
-    <div class="best-movie">
+    <div class="best-movie position-relative">
         <div class="best-movie__img-container">
             <img class="best-movie__img" src="https://i.namu.wiki/i/SA62mgd4EjeXHUXB1Qs0vjZC9F19nBbKtf0Qo7tMa7veCSMOamGJALSW_OIv7BXcK-xBhDSOOfFjWBI-qHZljknmprw1_6WmAcpLLWG264P869j42Jam14xXesXHq4lraeBGCz1eBXnM0dD37iCgbw.webp">
             <span class="material-symbols-outlined">
                 play_arrow
             </span>
-<!--                        <span class="material-icons">play_arrow</span>-->
+            <!--                        <span class="material-icons">play_arrow</span>-->
         </div>
 
         <div class="best-movie__title">
@@ -140,5 +187,33 @@
 
         </div>
     </div>
+    <div class="movie-recommendation">
+        <span class="movie-recommendation_title">다른 작품 보기 ></span>
+        <ul class="movie-recommendation__imges">
+            <li>
+                <img src="https://www.kobis.or.kr/common/mast/movie/2023/01/thumb_x289/thn_493d957e6b894177bb380f3d83a7eed0.jpg">
+            </li>
+            <li>
+                <img src="https://t1.daumcdn.net/news/201604/28/kedtv/20160428080119801kxyh.jpg">
+            </li>
+            <li>
+                <img src="https://newsimg.sedaily.com/2017/12/22/1OOYE2HN53_1.jpg">
+            </li>
+        </ul>
+    </div>
 
+    <div class="navigation-bar">
+        <a href="find.html">
+            <span class="material-symbols-outlined find-icon-clicked">
+                search
+            </span>
+
+        </a>
+        <a href="mypage.html">
+            <span class="material-symbols-outlined">
+                person_outline
+            </span>
+        </a>
+
+    </div>
 </body></html>
